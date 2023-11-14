@@ -13,3 +13,4 @@ def usuarios(request):
         'usuarios': Usuario.objects.all()
     }
     return render(request, 'usuarios/usuarios.html', usuarios)
+    
