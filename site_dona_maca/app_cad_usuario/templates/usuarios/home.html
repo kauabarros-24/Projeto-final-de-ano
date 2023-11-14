@@ -16,6 +16,7 @@
     </nav>
     <form action="{% url 'listagem_usuarios' %}">
         <div style="text-align: center;" class="container">
+            {% csrf_token%}
             <h1>Cadastro de usuários</h1>
             Nome<input name="nome" class="form-control-sm" type="text">
             Idade<input name="idade" class="form-control-sm" type="number">
