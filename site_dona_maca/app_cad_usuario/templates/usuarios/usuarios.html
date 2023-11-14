@@ -4,12 +4,13 @@
             <th>id</th>
             <th>nome</th>
             <th>idade</th>
+            
         </tr>
         {% for usuario in usuarios %}
         <tr>
-            <td>{{usuarios.id}}</td>
-            <td>{{usuarios.nome}}</td>
-            <td>{{usuarios.idade}}</td>
+            <td>{{usuario.id}}</td>
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.idade}}</td>
         </tr>
         {% endfor %}
     </table>
