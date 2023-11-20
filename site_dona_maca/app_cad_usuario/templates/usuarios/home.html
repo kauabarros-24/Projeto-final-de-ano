@@ -14,10 +14,11 @@
       <span class="navbar-brand mb-0 h1">Cadastre-me!</span>
     </div>
   </nav>
+  <form action="{% url 'listagem_usuarios' %}" method="post"></form>
   <div style="text-align: center;" class="container">
     <h1>Cadastro de usuários</h1>
-    Nome<input class="form-control-sm" type="text">
-    Idade<input class="form-control-sm" type="number">
+    Nome<input name="nome" class="form-control-sm" type="text">
+    Idade<input name="Idade" class="form-control-sm" type="number">
     <button class="form-control-sm">Enviar</button>
   </div>
 
