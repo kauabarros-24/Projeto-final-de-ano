@@ -3,10 +3,14 @@
         <tr>
              <th>id</th>
              <th>Nome</th>
-             <th>Idade</th>
+             <th>idade</th>
         </tr>
+        {% for usuario in usuarios%}
         <tr>
-            <td>{{}}</td>
+            <td>{{usuario.id}}</td>
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.idade}}</td>
         </tr>
+        {% endfor %}
     </table>
 </div>
