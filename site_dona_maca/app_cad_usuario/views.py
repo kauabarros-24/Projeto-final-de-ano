@@ -8,6 +8,7 @@ def usuarios(request):
     #Salvar os dados da tela para o banco
     novo_usuario = Usuarios()
     novo_usuario.idade = request.POST.get('idade')
+    novo_usuario.senha = request.POST.get('senha')
     novo_usuario.nome = request.POST.get('nome')
     novo_usuario.save()
     #Exibir os usuários cadastrados em uma nova página
