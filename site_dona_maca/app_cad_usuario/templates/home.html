@@ -20,6 +20,7 @@
     </header>
     <main>
         <form action="{% url 'listagem_usuarios' %}" method="post">
+            {{% csrf_token %}}
             <div id="squareCenter">
                 <div class="localDado">
                     <div class="indicador">E-mail</div>
