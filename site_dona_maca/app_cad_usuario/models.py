@@ -7,3 +7,4 @@ class NovosDados(models.Model):
     email = models.EmailField(max_length=255)
     senha = models.TextField(max_length=255)
     
+    
