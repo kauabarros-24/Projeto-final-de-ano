@@ -17,6 +17,12 @@ function stepper(btn){
     if(newValue >= min && newValue <= max){
         myInput.setAttribute("value", val)
     }
+
+    let localValor = document.getElementById("valor");
+    console.log(valor)
+    let valorsoma = 15;
+    (val <= 0) ? localValor.innerHTML = `R$${valorsoma.toFixed(2).replace(".",",")}` : localValor.innerHTML = `R$${(valorsoma * val).toFixed(2).replace(".",",")}`
+
 }
 
 function stepper1(btn){
