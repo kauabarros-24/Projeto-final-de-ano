@@ -1,0 +1,185 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+main{
+    padding-top: 140px;
+}
+main h3{
+    padding: 3px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+main span{
+    color: yellow;
+}
+main .localPagina{
+    background-color: #BAC8B3;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 60px;
+}
+.carousel-item img{
+    width: 900px;
+    height: auto;
+    border-radius: 15px;
+}
+
+#carouselExampleIndicators{
+    width: 900px;
+}
+
+#carrossel{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+#carrosselMacas{
+    width: 900px;
+}
+.carousel-item h5, p{
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+#listaCarrosel{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#listaCarrosel #addBag{
+    width: 45vw;
+    display: flex;
+    justify-content: end;
+}
+#listaCarrosel #addBag button{
+    justify-content: end;
+    appearance: none;
+    background-color: #BAC8B3;
+    border: none;
+    padding: 3px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.listaCarrosselItem{
+    width: 45vw;
+    background-color: #BAC8B3;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.listaCarrosselItem img{
+    border-radius: 15px 0px 0px 15px;
+    width: auto;
+    height: 100px;
+}
+
+.listaInfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.listaFunction{
+    border-radius: 45px;
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.listaFunction input[type="number"]{
+    appearance: textfield;
+    outline: none;
+    text-align: center;
+    color: black;
+    border: none;
+    font-size: 20px;
+}
+.listaFunction button{
+    padding: 10px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+}
+.listaFunction #aumentar{
+    border-radius: 0px 45px 45px 0px;
+    font-size: 25px;
+}
+.listaFunction button#reduzir{
+    font-size: 25px;
+    border-radius: 45px 0px 0px 45px;
+}
+
+@media (max-width: 1750px){
+    #carrosselMacas{
+        margin-bottom: 50px;
+    }
+    #carrossel{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .listaCarrosselItem{
+        width: 600px;
+    }
+    #listaCarrosel #addBag{
+        width: 600px;
+    }
+}
+@media (max-width: 1000px){
+    .carousel-item img{
+        width: 90vw;
+        height: auto;
+        border-radius: 15px;
+    }
+    #carouselExampleIndicators{
+        width: 90vw;
+    }
+    #carrosselMacas{
+        width: 90vw;
+    }
+}
+@media (max-width: 1000px){
+    .listaCarrosselItem{
+        width: 90vw;
+    }
+    #listaCarrosel #addBag{
+        width: 90vw;
+    }
+}
+@media (max-width: 1000px){
+    .carousel-item img{
+        width: 90vw;
+        height: auto;
+        border-radius: 15px;
+    }
+    #carouselExampleIndicators{
+        width: 90vw;
+    }
+    #carrosselMacas{
+        width: 90vw;
+    }
+}
+@media (max-width: 560px){
+    main .localPagina{
+        font-size: 40px;
+    }
+    .listaCarrosselItem img{
+        display: none;
+    }
+}
+    
