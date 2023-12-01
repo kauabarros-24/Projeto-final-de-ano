@@ -20,7 +20,7 @@ function stepper(btn){
 
     let localValor = document.getElementById("valor");
     console.log(valor)
-    let valorsoma = 15;
+    let valorsoma = 8;
     (val <= 0) ? localValor.innerHTML = `R$${valorsoma.toFixed(2).replace(".",",")}` : localValor.innerHTML = `R$${(valorsoma * val).toFixed(2).replace(".",",")}`
 
 }
@@ -35,6 +35,11 @@ function stepper1(btn){
     if(newValue >= min && newValue <= max){
         myInput1.setAttribute("value", val)
     }
+
+    let localValor = document.getElementById("valor1");
+    console.log(valor)
+    let valorsoma = 12;
+    (val <= 0) ? localValor.innerHTML = `R$${valorsoma.toFixed(2).replace(".",",")}` : localValor.innerHTML = `R$${(valorsoma * val).toFixed(2).replace(".",",")}`
 }
 
 function stepper2(btn){
@@ -47,6 +52,11 @@ function stepper2(btn){
     if(newValue >= min && newValue <= max){
         myInput2.setAttribute("value", val)
     }
+
+    let localValor = document.getElementById("valor2");
+    console.log(valor)
+    let valorsoma = 15;
+    (val <= 0) ? localValor.innerHTML = `R$${valorsoma.toFixed(2).replace(".",",")}` : localValor.innerHTML = `R$${(valorsoma * val).toFixed(2).replace(".",",")}`
 }
 
 function stepper3(btn){
@@ -59,4 +69,9 @@ function stepper3(btn){
     if(newValue >= min && newValue <= max){
         myInput3.setAttribute("value", val)
     }
+
+    let localValor = document.getElementById("valor3");
+    console.log(valor)
+    let valorsoma = 20;
+    (val <= 0) ? localValor.innerHTML = `R$${valorsoma.toFixed(2).replace(".",",")}` : localValor.innerHTML = `R$${(valorsoma * val).toFixed(2).replace(".",",")}`
 }

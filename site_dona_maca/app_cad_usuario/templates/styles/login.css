@@ -8,12 +8,15 @@
 }
 
 :root{
-    --cor-fonte-dark: rgba(255, 255, 255, 0.46);
+    --cor-fonte-dark: rgba(0, 0, 0, 0.46);
     --bg-dark: #171717;
 }
 
 body{
-    background-image: linear-gradient(180deg, #000000 52%, #bac8b3 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: linear-gradient(180deg, #bac8b3 70%, #ffffff 100%);
     width: 100%;
     height: 100vh;
 }
@@ -40,8 +43,8 @@ main{
 
 #squareCenter{
     border-radius: 25px;
-    background-color: var(--bg-dark);
-    height: 70vh;
+    background-color: white;
+    height: 700px;
     width: 70vw;
     display: flex;
     justify-content: center;
@@ -66,7 +69,7 @@ main{
     border-radius: 5px;
     height: 40px;
     width: 40vw;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
     text-indent: 10px;
     cursor: pointer;
@@ -115,4 +118,10 @@ main{
 .bx-moon{
     cursor: pointer;
     font-size: 30px;
+}
+
+#logo{
+    position: absolute;
+    top: 20vh;
+    left: 18vw;
 }
