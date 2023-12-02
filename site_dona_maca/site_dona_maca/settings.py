@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -55,8 +56,7 @@ ROOT_URLCONF = 'site_dona_maca.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'),
-                 os.path.join(BASE_DIR, 'app_cad_usuario', 'templates', 'app_cad_usuario')],
+        'DIRS': ['/app_cad_usuario/templates'],
         'APP_DIRS': True,
         
         'OPTIONS': {
