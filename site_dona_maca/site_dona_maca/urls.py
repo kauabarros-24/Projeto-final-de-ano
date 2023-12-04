@@ -7,7 +7,5 @@ urlpatterns = [
     #Ex: Facebook.com
     path('', views.home, name='home'),
     #usuarios.com
-    path('usuarios/', views.usuarios, name='listagem_usuarios')
-
-
+    path('index/', views.index, name='listagem_usuarios')
 ]

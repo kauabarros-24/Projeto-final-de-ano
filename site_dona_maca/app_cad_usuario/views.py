@@ -16,6 +16,9 @@ def usuarios(request):
     }
     #Retornar os dados para a página de listagem de usuários
     return render(request, 'usuarios/index.html', usuarios)
+
+def index(request):
+    return render(request, 'usuarios/index.html')
     
 
     
