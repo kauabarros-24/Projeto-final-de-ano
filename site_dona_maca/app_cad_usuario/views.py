@@ -19,6 +19,12 @@ def usuarios(request):
 
 def index(request):
     return render(request, 'usuarios/index.html')
+
+
+
+
+
+
     
 
     
