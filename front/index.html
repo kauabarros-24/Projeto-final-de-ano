@@ -1,30 +1,83 @@
-<script>
-    const email = 'kaua@gmail.com'
-    const senha = '123456789'
-    alert('olá');
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    const data = {
-        email: email,
-        senha: senha,
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    async function addUser() {
-        const response = await fetch('http://localhost:8000/users/', {
-            method: "POST",
-            headers: {
-                "Conten t-Type": "application/json",
-            },
-            body:JSON.stringify(data)
+    <!-- Link css's -->
+    <link rel="stylesheet" href="styles/register.css">
+    <!-- Link Boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="loginTitlle">Registrar-se</h1>
+        <div><i class='bx bx-moon'></i></div>
+    </header>
+    <main>
+        <form action="submit" method="post">
+            <div id="squareCenter">
+                <div class="localDado">
+                    <div class="indicador">E-mail</div>
+                    <div><input type="email" class="entradaDado" id="entradaEmail"></div>
+                </div>
+                <div class="localDado">
+                    <div class="indicador">Senha</div>
+                    <div><input type="password" name="senha" class="entradaDado" id="entradaSenha"></div>
+                    <div class="indicador">Confirme sua senha</div>
+                    <div><input type="password" name="senha-confirma" class="entradaDado" id="entradaSenha"></div>
+                </div>
+                <div id="logar">
+                    <div>
+                        <h2>Já possui conta?</h2>
+                        <a href="login.html">Entrar</a>
+                    </div>
+                    <button type="submit" class='bx bx-right-arrow-alt'></button>
+                </div>
+            </div>
+        </form>
+        <img src="imgs/logo/image 1.png" alt="" id="logo">
+    </main>
+    <footer>
+    </footer>
+
+    <script>
+        document.addEventListener('submit', (event) => {
+            event.preventDefault();
+            let senha = document.getElementById('entradaSenha');
+            let email = document.getElementById('entradaEmail');
+
         })
-        return response.json()
-    }
+          const data = {
+                email: email,
+                senha: senha,
+            }
 
-    async function getUsers() {
-        const response = await fetch('http://localhost:8000/users/')
-        const users = await response.json()
-        document.write(JSON.stringify(users))
-    }
+            async function addUser() {
+                const response = await fetch('http://localhost:8000/users/', {
+                    method: "POST",
+                    headers: {
+                        "Conten t-Type": "application/json",
+                    },
+                    body: JSON.stringify(data)
+                })
+                return response.json()
+            }
 
-    getUsers()
-    addUser()
-</script>
+            async function getUsers() {
+                const response = await fetch('http://localhost:8000/users/')
+                const users = await response.json()
+                document.write(JSON.stringify(users))
+            }
+
+            getUsers()
+            addUser()
+
+    </script>
+
+</body>
+
+</html>
