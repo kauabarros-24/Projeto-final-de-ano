@@ -35,7 +35,7 @@
                         <h2>Já possui conta?</h2>
                         <a href="login.html">Entrar</a>
                     </div>
-                    <button type="submit" class='bx bx-right-arrow-alt'></button>
+                    <button type="submit" class='bx bx-right-arrow-alt' onclick="window.location = 'home.html'"></button>
                 </div>
             </div>
         </form>
@@ -44,39 +44,7 @@
     <footer>
     </footer>
 
-    <script>
-        document.addEventListener('submit', (event) => {
-            event.preventDefault();
-            let senha = document.getElementById('entradaSenha');
-            let email = document.getElementById('entradaEmail');
-
-        })
-          const data = {
-                email: email,
-                senha: senha,
-            }
-
-            async function addUser() {
-                const response = await fetch('http://localhost:8000/users/', {
-                    method: "POST",
-                    headers: {
-                        "Conten t-Type": "application/json",
-                    },
-                    body: JSON.stringify(data)
-                })
-                return response.json()
-            }
-
-            async function getUsers() {
-                const response = await fetch('http://localhost:8000/users/')
-                const users = await response.json()
-                document.write(JSON.stringify(users))
-            }
-
-            getUsers()
-            addUser()
-
-    </script>
+    <script src="api.js"></script>
 
 </body>
 
