@@ -1,8 +1,8 @@
 alert("Olá");
 document.addEventListener('submit', (event) => {
     event.preventDefault();
-    const senha = document.getElementById('entradaSenha').value;
-    const email = document.getElementById('entradaEmail').value;
+    let senha = document.getElementById('entradaSenha').value;
+    let email = document.getElementById('entradaEmail').value;
 
   const data = {
         email: email,
