@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Link css's -->
+    <link rel="stylesheet" href="styles/register.css">
+    <!-- Link Boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
+
 <body>
-    <h1>Olá</h1>
+    <header>
+        <h1 id="loginTitlle">Registrar-se</h1>
+        <div><i class='bx bx-moon'></i></div>
+    </header>
+    <main>
+        <form action="submit" method="post">
+            <div id="squareCenter">
+                <div class="localDado">
+                    <div class="indicador">E-mail</div>
+                    <div><input type="email" class="entradaDado" id="entradaEmail"></div>
+                </div>
+                <div class="localDado">
+                    <div class="indicador">Senha</div>
+                    <div><input type="password" name="senha" class="entradaDado" id="entradaSenha"></div>
+                    <div class="indicador">Confirme sua senha</div>
+                    <div><input type="password" name="senha-confirma" class="entradaDado" id="entradaSenha"></div>
+                </div>
+                <div id="logar">
+                    <div>
+                        <h2>Já possui conta?</h2>
+                        <a href="login.html">Entrar</a>
+                    </div>
+                    <button type="submit" class='bx bx-right-arrow-alt' onclick="window.location = 'home.html'"></button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+    </footer>
+
+    <script src="api.js"></script>
+
 </body>
+
 </html>
