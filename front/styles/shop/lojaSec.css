@@ -1,0 +1,22 @@
+#loja{
+    display: flex;
+    justify-content: center;
+}
+
+#loja h3{
+    padding: 0px 10px;
+    border-radius: 5px;
+    background-color: #bac8b3;
+}
+#loja p{
+    margin-top: 50px;
+    max-width: 600px;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+#lojaItens{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
