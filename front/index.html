@@ -18,27 +18,29 @@
         <div><i class='bx bx-moon'></i></div>
     </header>
     <main>
-        <form action="submit" method="post">
-            <div id="squareCenter">
-                <div class="localDado">
-                    <div class="indicador">E-mail</div>
-                    <div><input type="email" class="entradaDado" id="entradaEmail"></div>
-                </div>
-                <div class="localDado">
-                    <div class="indicador">Senha</div>
-                    <div><input type="password" name="senha" class="entradaDado" id="entradaSenha"></div>
-                    <div class="indicador">Confirme sua senha</div>
-                    <div><input type="password" name="senha-confirma" class="entradaDado" id="entradaSenha"></div>
-                </div>
-                <div id="logar">
-                    <div>
-                        <h2>Já possui conta?</h2>
-                        <a href="login.html">Entrar</a>
-                    </div>
-                    <button type="submit" class='bx bx-right-arrow-alt' onclick="window.location = 'home.html'"></button>
-                </div>
+        <div id="squareCenter">
+            <div class="localDado">
+                <div class="indicador">E-mail</div>
+                <div><input type="email" class="entradaDado" id="entradaEmail"></div>
             </div>
-        </form>
+            <div class="localDado">
+                <div class="indicador">Senha</div>
+                <div><input type="password" name="senha" class="entradaDado" id="entradaSenha"></div>
+                <div class="indicador">Confirme sua senha</div>
+                <div><input type="password" name="senha-confirma" class="entradaDado" id="entradaSenha"></div>
+            </div>
+            <div id="logar">
+                <div>
+                    <h2>Já possui conta?</h2>
+                    <a href="login.html">Entrar</a>
+                </div>
+                <!-- <button type="submit" class='bx bx-right-arrow-alt' onclick="window.location = 'home.html'"></button> -->
+                <input type="button" value="Gravar" id="gravar" onclick="addUser()">
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYWHxCdDONs0DUi08ogReU7AQDmHOSGETsWZQ1xXTyCke4NBh5" width="200" alt="">
+            </div>
+        </div>
     </main>
     <footer>
     </footer>
@@ -48,3 +50,13 @@
 </body>
 
 </html>
+
+<style>
+
+body {
+    color: white;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYWHxCdDONs0DUi08ogReU7AQDmHOSGETsWZQ1xXTyCke4NBh5');
+    background-size: contain;
+}
+
+</style>
