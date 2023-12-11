@@ -1,0 +1,28 @@
+#feedback form{
+    margin: 0px 10vw;
+}
+
+#feedback fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback input{
+    appearance: none;
+    border: 1px solid black;
+    margin: 20px 0px;
+    border-radius: 30px;
+    text-indent: 15px;
+}
+
+#feedback #feedbackSendButton{
+    padding: 3px;
+    font-size: 20px;
+    width: 120px;
+    text-indent: 0;
+    background-color: #bac8b3;
+    border: none;
+    color: white;
+
+}
+

@@ -10,13 +10,47 @@
 }
 #loja p{
     margin-top: 50px;
+    min-width: 100px;
     max-width: 600px;
     font-size: 20px;
     background-color: transparent;
+}
+
+.item{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #lojaItens{
     margin-top: 50px;
     display: flex;
     gap: 50px;
+}
+
+@media (max-width: 1500px){
+    #lojaItens{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mapa{
+        display: flex;
+        justify-content: center;
+    }
+
+    #mapa div,iframe,.gmap_canvas{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 700px){
+    #loja p{
+        margin-top: 50px;
+        min-width: 100px;
+        max-width: 80vw;
+        font-size: 20px;
+        background-color: transparent;
+    }
 }
