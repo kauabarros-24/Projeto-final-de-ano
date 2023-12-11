@@ -26,3 +26,28 @@
 
 }
 
+#bottomSide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#checkboxSide{
+    display: flex;
+    align-items: center;
+}
+#checkboxSide #checkbox{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+#checkboxSide #checkbox:checked{
+    background-color: #a8a7ff;
+    box-shadow: 0px 0px 3px 2px #a8a7ff;
+    border: none;
+}
+

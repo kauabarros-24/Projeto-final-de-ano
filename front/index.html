@@ -33,10 +33,10 @@
             <img src="imgs/logo/image 1.png" alt="LOGO DONA MAÇÃ">
             <nav id="navMenu">
                 <ul>
-                    <li class="active liNavMenu" onclick="window.location=">Destaques</li>
-                    <li class="liNavMenu">Produtos</li>
-                    <li class="liNavMenu">Loja</li>
-                    <li class="liNavMenu">Feedback</li>
+                    <li class="active liNavMenu" onclick="window.location='#destaquesLocal'">Destaques</li>
+                    <li class="liNavMenu" onclick="window.location='#produtosLocal'">Produtos</li>
+                    <li class="liNavMenu" onclick="window.location='#lojaLocal'">Loja</li>
+                    <li class="liNavMenu" onclick="window.location='#feedbackLocal'">Feedback</li>
                 </ul>
             </nav>
             <div>
@@ -51,7 +51,7 @@
     <main>
         <h3> Compre <span>3</span> maçãs e receba <span>20% de desconto</span> na terceira</h3>
         <!-- Sec - 1 - Destaques-->
-        <h1 class="localPagina badge">Destaques</h1>
+        <h1 class="localPagina badge" id="destaquesLocal">Destaques</h1>
         <section id="destaques">
                 <div class="container-fluid" id="carrossel">
                     <div id="carrosselMacas" class="carousel slide" data-bs-ride="carousel">
@@ -173,7 +173,7 @@
                 </div>
         </section>
         <!-- Sec - 2 - Produtos -->
-        <h1 class="localPagina badge">Produtos</h1>
+        <h1 class="localPagina badge" id="produtosLocal">Produtos</h1>
         <section id="produtos">
                 <div id="productList">
                     <div class="product">
@@ -226,7 +226,7 @@
                     </div>
         </section>
         <!-- Sec - 3 - Loja-->
-        <h1 class="localPagina badge">Loja</h1>
+        <h1 class="localPagina badge" id="lojaLocal">Loja</h1>
         <section id="loja">
             <div id="lojaItens">
                 <div class="Item">
@@ -240,7 +240,7 @@
             </div>
         </section>
         <!-- Sec - 4 - Feedback-->
-        <h1 class="localPagina badge">Feedback</h1>
+        <h1 class="localPagina badge" id="feedbackLocal">Feedback</h1>
         <section id="feedback">
             <div>
                 <form action="#" method="get">
@@ -248,7 +248,13 @@
                         <legend> Envie já seu feedback! </legend>
                         <input type="text" name="email" id="" placeholder="Email/Name" style="height: 50px;">
                         <input type="text" name="opniao" id="" placeholder="Opnião" style="height: 200px;">
-                        <input type="submit" value="Enviar" id="feedbackSendButton">
+                        <div id="bottomSide">
+                            <input type="submit" value="Enviar" id="feedbackSendButton">
+                            <div id="checkboxSide">
+                                <legend>Deseja receber atualizações?</legend>
+                                <input type="checkbox" name="" id="checkbox">
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
             </div>
