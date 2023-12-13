@@ -40,5 +40,9 @@
     border-radius: 3rem;
     color: white;
     background-color: #bac8b3;
+    transition: all .5s ease;
+}
+.product .productBuy button:hover{
+    background-color: #8a9684;
 }
 

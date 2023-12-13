@@ -15,6 +15,14 @@
     text-indent: 15px;
 }
 
+#feedback textarea{
+    padding-top: 20px;
+    border: 1px solid black;
+    margin: 20px 0px;
+    border-radius: 30px;
+    text-indent: 15px;
+}
+
 #feedback #feedbackSendButton{
     padding: 3px;
     font-size: 20px;

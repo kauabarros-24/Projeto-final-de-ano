@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Link faviicon -->
+    <link rel="shortcut icon" href="imgs/logo/image1.png" type="image/x-icon">
     <!-- Bootstrap 5 - Link CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -23,14 +25,14 @@
 <body>
     <header class="container-fluid" id="header">
         <nav id="top-menu" class="container-fluid">
-            <input type="button" value="Entrar" onclick="window.location='login.html'">
-            <span>|</span>
-            <input type="button" value="Contato">
-            <span>|</span>
-            <input type="button" value="Sobre">
+            <ul>
+                <li>Entrar</li>
+                <li>Contato</li>
+                <li>Sobre</li>
+            </ul>
         </nav>
         <div id="mid-menu">
-            <img src="imgs/logo/image 1.png" alt="LOGO DONA MAÇÃ">
+            <a href="#"><img src="imgs/logo/image1.png" alt="LOGO DONA MAÇÃ"></a>
             <nav id="navMenu">
                 <ul>
                     <li class="active liNavMenu" onclick="window.location='#destaquesLocal'">Destaques</li>
@@ -51,8 +53,8 @@
     <main>
         <h3> Compre <span>3</span> maçãs e receba <span>20% de desconto</span> na terceira</h3>
         <!-- Sec - 1 - Destaques-->
-        <h1 class="localPagina badge" id="destaquesLocal">Destaques</h1>
         <section id="destaques">
+            <h1 class="localPagina badge" id="destaquesLocal">Destaques</h1>
                 <div class="container-fluid" id="carrossel">
                     <div id="carrosselMacas" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -69,7 +71,7 @@
                             <div class="carousel-item active">
                                 <img src="imgs/maçãs/carrossel/Leonardo_Diffusion_XL_toffee_apple_1.jpg" class="d-block" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Caramelizada</h5>
+                                    <h4>Caramelizada</h4>
                                     <p>Maçã com uma simples cobertura de caramelo</p>
                                 </div>
                             </div>
@@ -77,7 +79,7 @@
                                 <img src="imgs/maçãs/carrossel/Leonardo_Diffusion_XL_toffee_apple_caramel_drops_of_sweetened_2.jpg"
                                     class="d-block" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Branca Caramelizada</h5>
+                                        <h4>Branca Caramelizada</h4>
                                         <p>Maçã coberta de chocolate branco com mel</p>
                                     </div>
                             </div>
@@ -85,7 +87,7 @@
                                 <img src="imgs/maçãs/carrossel/Leonardo_Diffusion_XL_toffee_apple_chocolate_2.jpg" class="d-block"
                                     alt="...">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Casal Doce</h5>
+                                        <h4>Casal Doce</h4>
                                         <p>Duas maçãs cobertas de caramelo com fragmentos de chocolate e paçoca</p>
                                     </div>
                             </div>
@@ -93,7 +95,7 @@
                                 <img src="imgs/maçãs/carrossel/Leonardo_Diffusion_XL_toffee_apple_white_chocolate_2.jpg" class="d-block"
                                     alt="...">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Vulcanica</h5>
+                                        <h4>Vulcanica</h4>
                                         <p>Maçã coberta por chocolate branco e carabelo, com fragmentos de paçoca e chocolate branco</p>
                                     </div>
                             </div>
@@ -173,8 +175,10 @@
                 </div>
         </section>
         <!-- Sec - 2 - Produtos -->
-        <h1 class="localPagina badge" id="produtosLocal">Produtos</h1>
-        <section id="produtos">
+
+        <section>
+            <h1 class="localPagina badge" id="produtosLocal">Produtos</h1>
+            <div id="produtos">
                 <div id="productList">
                     <div class="product">
                         <div>IMG</div>
@@ -225,45 +229,50 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <!-- Sec - 3 - Loja-->
-        <h1 class="localPagina badge" id="lojaLocal">Loja</h1>
-        <section id="loja">
-            <div id="lojaItens">
-                <div class="Item">
-                    <div class="mapouter" id="mapa"><div class="gmap_canvas"><iframe width="820" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=barra+do+sul+rua+da+amizade+98&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></a><br><a href="https://textcaseconvert.com/"></a><br><style>.mapouter{position: relative;text-align: right;height: 560px;width: 820px;}</style><a href="https://www.embedmaps.co">adding google map to website</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 560px;width: 820px; border-radius: 15px;}</style></div></div>
-                </div>
-                <div class="Item">
-                    <h2>Barra do Sul</h2>
-                    <h3>R. da Amizade, 98</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore eaque nemo, molestias repudiandae quam, delectus numquam esse consequatur sint, alias repellat reprehenderit vitae sequi aliquid tempore? Libero cupiditate mollitia laboriosam?</p>
+        <section>
+            <h1 class="localPagina badge" id="lojaLocal">Loja</h1>
+            <div id="loja">
+                <div id="lojaItens">
+                    <div class="Item">
+                        <div class="mapouter" id="mapa"><div class="gmap_canvas"><iframe width="820" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=barra+do+sul+rua+da+amizade+98&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></a><br><a href="https://textcaseconvert.com/"></a><br><style>.mapouter{position: relative;text-align: right;height: 560px;width: 820px;}</style><a href="https://www.embedmaps.co">adding google map to website</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 560px;width: 820px; border-radius: 15px;}</style></div></div>
+                    </div>
+                    <div class="Item">
+                        <h2>Barra do Sul</h2>
+                        <h3>R. da Amizade, 98</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore eaque nemo, molestias repudiandae quam, delectus numquam esse consequatur sint, alias repellat reprehenderit vitae sequi aliquid tempore? Libero cupiditate mollitia laboriosam?</p>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Sec - 4 - Feedback-->
-        <h1 class="localPagina badge" id="feedbackLocal">Feedback</h1>
-        <section id="feedback">
-            <div>
-                <form action="#" method="get">
-                    <fieldset>
-                        <legend> Envie já seu feedback! </legend>
-                        <input type="email" name="email" id="" placeholder="Email/Name" style="height: 50px;">
-                        <textarea placeholder="opiniao"></textarea>
-                        <!-- <input type="text" name="opniao" id="" placeholder="Opnião" style="height: 200px;"> -->
-                        <div id="bottomSide">
-                            <input type="submit" value="Enviar" id="feedbackSendButton">
-                            <div id="checkboxSide">
-                                <label for="checkbox">Deseja receber atualizações?</label>
-                                <input type="checkbox" name="" id="checkbox">
+        <section>
+            <h1 class="localPagina badge" id="feedbackLocal">Feedback</h1>
+            <div id="feedback">
+                <div>
+                    <form action="#" method="get">
+                        <fieldset>
+                            <legend> Envie já seu feedback! </legend>
+                            <input type="email" name="email" id="" placeholder="Email/Name" style="height: 50px;">
+                            <textarea placeholder="opiniao"></textarea>
+                            <!-- <input type="text" name="opniao" id="" placeholder="Opnião" style="height: 200px;"> -->
+                            <div id="bottomSide">
+                                <input type="submit" value="Enviar" id="feedbackSendButton">
+                                <div id="checkboxSide">
+                                    <label for="checkbox">Deseja receber atualizações?</label>
+                                    <input type="checkbox" name="" id="checkbox">
+                                </div>
                             </div>
-                        </div>
-                    </fieldset>
-                </form>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-            <div id="footerTop">R. da Amizade, 98 - Barra do Sul</div>
+            <div id="footerTop">Dev by Gabryel V.P & Kaua Barros</div>
             <div id="footerMain">
                 <div>
                     <ul>

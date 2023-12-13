@@ -25,9 +25,25 @@ ul{
     text-align: end;
 }
 
-#top-menu span{
-    user-select: none;
+#top-menu ul{
+    margin: 5px 0px;
+    display: flex;
+    list-style: none;
+    justify-content: end;
 }
+
+#top-menu ul li{
+    padding: 3px 10px;
+    border-left: 1px solid black;
+}
+
+#top-menu ul li:hover{
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+#top-menu ul li:nth-child(1) {
+    border: none;
+  }
 
 #top-menu input{
     font-size: 15px;

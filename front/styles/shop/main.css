@@ -3,6 +3,7 @@
 }
 body{
     overflow-x: hidden;
+    width: 100vw;
 }
 main{
     padding-top: 140px;
@@ -45,7 +46,7 @@ h1.badge{
 #carrosselMacas{
     width: 900px;
 }
-.carousel-item h5, p{
+.carousel-item h4, p{
     background-color: rgba(0, 0, 0, 0.356);
 }
 
@@ -69,7 +70,12 @@ h1.badge{
     padding: 3px 10px;
     font-size: 20px;
     border-radius: 10px;
+    transition: all .5s ease;
 }
+#listaCarrosel #addBag button:hover{
+    background-color: #8a9684;
+}
+
 
 .listaCarrosselItem{
     width: 45vw;
@@ -92,6 +98,9 @@ h1.badge{
     justify-content: center;
     flex-direction: column;
     padding: 10px;
+}
+.listaInfo h5{
+    font-size: 18px;
 }
 
 .listaFunction{
@@ -160,16 +169,12 @@ h1.badge{
     #carrosselMacas{
         width: 90vw;
     }
-}
-@media (max-width: 1000px){
     .listaCarrosselItem{
         width: 90vw;
     }
     #listaCarrosel #addBag{
         width: 90vw;
     }
-}
-@media (max-width: 1000px){
     .carousel-item img{
         width: 90vw;
         height: auto;
@@ -188,6 +193,12 @@ h1.badge{
     }
     .listaCarrosselItem img{
         display: none;
+    }
+    .listaInfo h5{
+        font-size: 15px;
+    }
+    .listaInfo h6{
+        font-size: 12px;
     }
 }
     
